@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:weightSum="1"
+        android:id="@+id/be"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="0dp"
+            android:elevation="0dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_below="@+id/be"
+                android:id="@+id/image2"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:src="@drawable/frame"
+                app:civ_border_color="#FF000000"
+                tools:ignore="MissingConstraints" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/ic_dashboard_black_24dp"
+                app:civ_border_color="#FF000000"
+                android:layout_gravity="center"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#E7989B"
+            app:layout_constraintEnd_toEndOf="@+id/image"
+            android:layout_gravity="center"
+
+            app:layout_constraintStart_toStartOf="@+id/image"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

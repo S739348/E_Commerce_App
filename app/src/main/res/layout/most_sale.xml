@@ -6,29 +6,6 @@
     android:gravity="left"
     xmlns:tools="http://schemas.android.com/tools">
 
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginLeft="6dp"-->
-<!--        android:elevation="16dp"-->
-<!--        android:layout_weight="1"-->
-<!--        android:backgroundTint="@color/white"-->
-<!--        app:cardCornerRadius="8dp"-->
-<!--        tools:ignore="MissingConstraints">-->
-<!--        <org.imaginativeworld.whynotimagecarousel.ImageCarousel-->
-<!--            android:id="@+id/image"-->
-<!--            app:showTopShadow="false"-->
-<!--            app:bottomShadowAlpha="0.3"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="216dp"-->
-<!--            app:imageScaleType="centerCrop"-->
-
-<!--            app:showNavigationButtons="false"-->
-<!--            app:showIndicator="false"-->
-<!--            app:showCaption="true"-->
-
-<!--            app:autoPlay="false"/>-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

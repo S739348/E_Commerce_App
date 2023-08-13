@@ -1,22 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/toolbar"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/status"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CART"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="8dp"
+            android:letterSpacing="0.1"
+            android:textSize="18sp" />
+
+    </androidx.cardview.widget.CardView>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/card1"
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:id="@+id/totalamount"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+           <TextView
+               android:id="@+id/subTotal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="SUBTOTAL"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:layout_marginTop="18dp"
+               android:layout_marginBottom="18dp"
+
+               android:layout_marginLeft="18dp"
+               android:layout_marginRight="8dp"
+               android:letterSpacing="0.1"
+               android:textSize="18sp" />
+                   <TextView
+                       android:id="@+id/totalPrice"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="₹ 1950"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+                       android:layout_marginTop="18dp"
+                       android:layout_marginBottom="18dp"
+
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="8dp"
+                       android:letterSpacing="0.1"
+                       android:textSize="18sp" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@id/detailLayout"
+                   android:layout_width="match_parent"
+                   android:layout_below="@id/totalamount"
+                   android:orientation="horizontal"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:drawableLeft="@drawable/correct"
+                       android:drawablePadding="4dp"
+                       android:text="Your Order is Eligible for FREE Delivery."
+                       android:textColor="#00d654"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="18dp"
+                       android:layout_marginRight="2dp"
+                       android:letterSpacing="0.1"
+                       android:textSize="14sp" />
+                   <TextView
+                       android:id="@+id/detail"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Detail"
+                       android:textColor="#20bed9"
+                       android:textStyle="bold"
+                       android:layout_marginRight="2dp"
+                       android:letterSpacing="0.1"
+                       android:textSize="14sp" />
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_below="@+id/detailLayout"
+                   android:gravity="center"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="24dp"
+                   android:layout_height="wrap_content">
+               <androidx.appcompat.widget.AppCompatButton
+                   android:layout_width="match_parent"
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="18dp"
+                   android:text="PROCEED TO BUY"
+                   android:textColor="@color/white"
+                   android:background="@drawable/buttonbackground"
+                   android:padding="8dp"
+                   android:backgroundTint="#b20032"
+
+                   android:layout_height="wrap_content">
+
+               </androidx.appcompat.widget.AppCompatButton>
+               </LinearLayout>
+           </RelativeLayout>
+       </androidx.cardview.widget.CardView>
+       <View
+           android:id="@+id/view1"
+           android:layout_below="@+id/card1"
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="2dp"
+           android:background="@color/status"></View>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_below="@+id/view1"
+
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="2dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+                   android:id="@+id/b"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ITEMS"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginRight="8dp"
+                   android:letterSpacing="0.1"
+                   android:textSize="18sp" />
+
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/cartItem"
+                   android:layout_below="@+id/b"
+                   android:layout_marginLeft="0dp"
+                   android:layout_marginTop="16dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+           </RelativeLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+   </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

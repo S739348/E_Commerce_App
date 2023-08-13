@@ -46,58 +46,47 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="7dp">
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/womenTextView"
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:text="Women"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
 
-                app:cardCornerRadius="10dp">
-
-                <org.imaginativeworld.whynotimagecarousel.ImageCarousel
-                    android:id="@+id/carousel"
-                    app:showTopShadow="false"
-                    app:bottomShadowAlpha="0.3"
-                    android:layout_width="match_parent"
-                    android:layout_height="220dp"
-                    app:showNavigationButtons="true"
-                    app:showCaption="true"
-                    app:autoPlay="true"/>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView"
-                android:layout_width="match_parent"
+                android:layout_marginLeft="18dp"
+                android:textColor="#DFE4D5D5"></TextView>
+            <TextView
+                android:id="@+id/menTextView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                app:cardCornerRadius="10dp">
+                android:text="Men"
+                android:textSize="16sp"
+                android:textStyle="bold"
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/categoriesList"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp" />
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardVie"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginLeft="8dp"
-                app:cardCornerRadius="10dp">
+                android:padding="4dp"
+                android:layout_marginLeft="28dp"
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/productList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp" />
-            </androidx.cardview.widget.CardView>
+
+                android:textColor="#DFE4D5D5"></TextView>
+
+        </LinearLayout>
+
+ <androidx.fragment.app.FragmentContainerView
+              android:layout_width="match_parent"
+              android:id="@+id/womens"
+               android:layout_height="wrap_content">
+
+            </androidx.fragment.app.FragmentContainerView>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

@@ -1,26 +1,17 @@
 package com.example.tailor.adapter;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewbinding.ViewBinding;
-
 import com.bumptech.glide.Glide;
 import com.example.tailor.R;
 import com.example.tailor.databinding.YoumayLikeBinding;
 import com.example.tailor.detail.ProductDetail;
 import com.example.tailor.model.Product;
-
-import org.imaginativeworld.whynotimagecarousel.listener.CarouselListener;
-import org.imaginativeworld.whynotimagecarousel.model.CarouselItem;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,8 +34,8 @@ public class SimilarAdapter extends RecyclerView.Adapter<SimilarAdapter.ViewHold
     public void onBindViewHolder(@NonNull SimilarAdapter.ViewHolder holder, int position) {
 Product product=productArrayList.get(position);
         holder.youmayLikeBinding.lable.setText(product.getName());
-        holder.youmayLikeBinding.price.setText("RS "+product.getPrice());
-        holder.youmayLikeBinding.discount.setText(product.getDiscount()+" %Off");
+        holder.youmayLikeBinding.price.setText("₹"+product.getPrice());
+        holder.youmayLikeBinding.discount.setText(product.getDiscount()+"%Off");
 
         Glide.with(context).load(product.getImages().get(0)).placeholder(R.drawable.women).into(holder.youmayLikeBinding.image);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -64,8 +55,6 @@ Product product=productArrayList.get(position);
         List<String> images = product.getImages();
         String[] imageArray = images.toArray(new String[images.size()]);
         intent.putExtra("Images", imageArray);
-
-
         context.startActivity(intent);
 
     }

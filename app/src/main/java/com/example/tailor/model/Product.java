@@ -3,7 +3,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
-    private String name;
+    private String name,WearType,itemCategory;
+    private String key;
     private List<String> images=new ArrayList<>();
     private String status;
     private String price;
@@ -13,6 +14,17 @@ public class Product {
 
     public Product() {}
 
+    public Product(String WearType,String itemCategory,String name, ArrayList<String> images, String status, String price, String discount, String stock, String id) {
+        this.WearType=WearType;
+        this.itemCategory=itemCategory;
+        this.name = name;
+        this.images = images;
+        this.status = status;
+        this.price = price;
+        this.discount = discount;
+        this.stock = stock;
+        this.id = id;
+    }
     public Product(String name, ArrayList<String> images, String status, String price, String discount, String stock, String id) {
         this.name = name;
         this.images = images;
@@ -77,5 +89,29 @@ public class Product {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getWearType() {
+        return WearType;
+    }
+
+    public void setWearType(String wearType) {
+        WearType = wearType;
+    }
+
+    public String getItemCategory() {
+        return itemCategory;
+    }
+
+    public void setItemCategory(String itemCategory) {
+        this.itemCategory = itemCategory;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

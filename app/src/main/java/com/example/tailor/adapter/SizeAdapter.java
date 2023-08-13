@@ -4,10 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.example.tailor.R;
 import com.example.tailor.databinding.SizetogetBinding;
@@ -34,7 +32,7 @@ public class SizeAdapter extends RecyclerView.Adapter<SizeAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull SizeAdapter.ViewHolder holder, int position) {
     SizeModel model=list.get(position);
     holder.sizetogetBinding.label.setText(model.getSize());
-        Glide.with(context).load(model.getImage()).placeholder(R.drawable.men).into(holder.sizetogetBinding.image);
+       // Glide.with(context).load(model.getImage()).placeholder(R.drawable.men).into(holder.sizetogetBinding.image);
     }
 
     @Override

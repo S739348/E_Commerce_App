@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="5dp"
+    android:layout_margin="1dp"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -19,23 +19,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginLeft="8dp"
             android:layout_gravity="center_horizontal"
             app:cardElevation="0dp"
             android:elevation="0dp">
+<!--            <TextView-->
+<!--                android:id="@+id/label"-->
+<!--               android:text="TextView"-->
+<!--                android:textColor="#E7989B"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/image"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/image"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
             <TextView
                 android:id="@+id/label"
+                android:text="TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="#E7989B"
+                android:letterSpacing="0.1"
+                android:textStyle="bold"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="@+id/image"
                 android:layout_gravity="center"
-                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/image"
                 tools:ignore="MissingConstraints" />
-
-
         </androidx.cardview.widget.CardView>
 
 

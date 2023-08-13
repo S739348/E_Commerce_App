@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout class="androidx.appcompat.app.AlertController$RecycleListView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="6dp"
+        android:id="@+id/view"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="180dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="240dp"></ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="#A3EBF1F4"
+                android:elevation="0dp"
+                android:padding="6dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/star_rating"
+                    android:drawablePadding="8dp"
+                    android:text="4.5"
+                    android:textColor="#b20032"></TextView>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:layout_margin="9dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diverse Men's Tshirt"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLength="30"
+                    android:letterSpacing="0.050"
+
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="₹1499"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    android:maxLength="30"
+                    android:letterSpacing="0.1"
+                    android:textSize="18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="M.R.P"
+                        android:gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:maxLength="30"
+                        android:letterSpacing="0.050"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹ 1499"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="6dp"
+                        android:layout_gravity="center"
+                        android:maxLength="30"
+                        android:background="@drawable/strike_through"
+                        android:letterSpacing="0.050"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:letterSpacing="0.040"
+                    android:maxLength="30"
+                    android:text="In Stock"
+                    android:textColor="#AE3C7791"
+                    android:textColorHighlight="#9AFFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="Size:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLength="30"
+                    android:letterSpacing="0.040"
+                    android:textSize="12sp" />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                    android:layout_marginLeft="3dp"
+
+                    android:layout_height="wrap_content"
+                android:text="40"
+                android:textStyle="bold"
+                android:maxLength="30"
+                android:letterSpacing="0.040"
+                android:textSize="12sp" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_height="wrap_content"
+                        android:text="Color:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:maxLength="30"
+                        android:letterSpacing="0.040"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="3dp"
+
+                        android:layout_height="wrap_content"
+                        android:text="White"
+                        android:textStyle="bold"
+                        android:maxLength="30"
+                        android:letterSpacing="0.040"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="10 days Return and Exchange"
+                    android:textStyle="bold"
+                    android:textColor="#AE0D8899"
+                    android:maxLength="30"
+                    android:letterSpacing="0.040"
+                    android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:text="BUY"
+                    android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttonbackground"
+                    android:padding="8dp"
+                    android:backgroundTint="#b20032"
+                    android:layout_height="wrap_content">
+            </androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:text="REMOVE"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_designe"
+                    android:padding="8dp"
+                    android:backgroundTint="#00d654"
+                    android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/view"
+        android:background="@color/status"></View>
+</RelativeLayout>

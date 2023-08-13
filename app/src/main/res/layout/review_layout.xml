@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#20bed9"
+        android:src="@drawable/baseline_person_24"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#b20032"/>
+        <TextView
+            android:id="@+id/usernamereview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:layout_gravity="center"
+            android:textColor="#20bed9"
+            android:textStyle="bold"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="8dp"
+            android:letterSpacing="0.1"
+            android:textSize="14sp" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.3"
+            android:drawableRight="@drawable/star"
+            android:drawablePadding="8dp"
+            android:textColor="#20bed9"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:letterSpacing="0.1"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:letterSpacing="0.1"
+            android:textSize="14sp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/reviewImageRecycle"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/reviewdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
